@@ -1,9 +1,9 @@
 import { serve } from "@hono/node-server";
 import { Hono } from "hono";
-import { logger } from "hono/logger";
+// import { logger } from "hono/logger";
 
 const app = new Hono();
-app.use(logger());
+// app.use(logger());
 
 app.get("/", async (c) => {
   await new Promise((resolve) => setTimeout(() => resolve(0), 0));
